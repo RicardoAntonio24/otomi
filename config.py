@@ -1,9 +1,9 @@
 import web
 
-db_host = 'localhost'
-db_name = 'webservice_aj'
-db_user = 'root'
-db_pw = ''
+db_host = 'o3iyl77734b9n3tg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
+db_name = 'do1vahgpsgnwn10g'
+db_user = 'z8sv0cktp7fm1yn9'
+db_pw = 'zk23w128mhgre1by'
 
 db = web.database(
     dbn='mysql',
