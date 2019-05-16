@@ -1,0 +1,5 @@
+'/partes_de_cuerpo', 'application.controllers.partes_de_cuerpo.index.Index',
+'/partes_de_cuerpo/view/(.+)', 'application.controllers.partes_de_cuerpo.view.View',
+'/partes_de_cuerpo/edit/(.+)', 'application.controllers.partes_de_cuerpo.edit.Edit',
+'/partes_de_cuerpo/delete/(.+)', 'application.controllers.partes_de_cuerpo.delete.Delete',
+'/partes_de_cuerpo/insert', 'application.controllers.partes_de_cuerpo.insert.Insert',

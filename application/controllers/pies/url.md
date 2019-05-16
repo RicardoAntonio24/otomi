@@ -1,0 +1,5 @@
+'/pies', 'application.controllers.pies.index.Index',
+'/pies/view/(.+)', 'application.controllers.pies.view.View',
+'/pies/edit/(.+)', 'application.controllers.pies.edit.Edit',
+'/pies/delete/(.+)', 'application.controllers.pies.delete.Delete',
+'/pies/insert', 'application.controllers.pies.insert.Insert',

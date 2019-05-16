@@ -1,0 +1,1 @@
+'/api_manos/?', 'application.api.manos.api_manos.Api_manos',

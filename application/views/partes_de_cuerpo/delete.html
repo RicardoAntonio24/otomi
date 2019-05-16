@@ -1,0 +1,47 @@
+$def with(partes_de_cuerpo, message)
+<h3>
+    <a href="/partes_de_cuerpo">partes_de_cuerpo</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_palabra" id="id_palabra" value="$partes_de_cuerpo.id_palabra" />
+
+    <div class="form-group">
+    <label for="palabra_uno">palabra_uno</label>
+    <input readonly id="palabra_uno" type="text" class="form-control" name="palabra_uno" size="30" value="$partes_de_cuerpo.palabra_uno"/>
+</div><div class="form-group">
+    <label for="palabra_dos">palabra_dos</label>
+    <input readonly id="palabra_dos" type="text" class="form-control" name="palabra_dos" size="30" value="$partes_de_cuerpo.palabra_dos"/>
+</div><div class="form-group">
+    <label for="palabra_tres">palabra_tres</label>
+    <input readonly id="palabra_tres" type="text" class="form-control" name="palabra_tres" size="30" value="$partes_de_cuerpo.palabra_tres"/>
+</div><div class="form-group">
+    <label for="palabra_cuatro">palabra_cuatro</label>
+    <input readonly id="palabra_cuatro" type="text" class="form-control" name="palabra_cuatro" size="30" value="$partes_de_cuerpo.palabra_cuatro"/>
+</div><div class="form-group">
+    <label for="palabra_oto_uno">palabra_oto_uno</label>
+    <input readonly id="palabra_oto_uno" type="text" class="form-control" name="palabra_oto_uno" size="30" value="$partes_de_cuerpo.palabra_oto_uno"/>
+</div><div class="form-group">
+    <label for="palabra_oto_dos">palabra_oto_dos</label>
+    <input readonly id="palabra_oto_dos" type="text" class="form-control" name="palabra_oto_dos" size="30" value="$partes_de_cuerpo.palabra_oto_dos"/>
+</div><div class="form-group">
+    <label for="palabra_oto_tres">palabra_oto_tres</label>
+    <input readonly id="palabra_oto_tres" type="text" class="form-control" name="palabra_oto_tres" size="30" value="$partes_de_cuerpo.palabra_oto_tres"/>
+</div><div class="form-group">
+    <label for="palabra_oto_cuatro">palabra_oto_cuatro</label>
+    <input readonly id="palabra_oto_cuatro" type="text" class="form-control" name="palabra_oto_cuatro" size="30" value="$partes_de_cuerpo.palabra_oto_cuatro"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

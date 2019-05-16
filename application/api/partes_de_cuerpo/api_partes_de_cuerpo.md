@@ -1,0 +1,1 @@
+'/api_partes_de_cuerpo/?', 'application.api.partes_de_cuerpo.api_partes_de_cuerpo.Api_partes_de_cuerpo',

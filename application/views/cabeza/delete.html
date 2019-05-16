@@ -1,0 +1,29 @@
+$def with(cabeza, message)
+<h3>
+    <a href="/cabeza">cabeza</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_palabra_cabeza" id="id_palabra_cabeza" value="$cabeza.id_palabra_cabeza" />
+
+    <div class="form-group">
+    <label for="palabra">palabra</label>
+    <input readonly id="palabra" type="text" class="form-control" name="palabra" size="30" value="$cabeza.palabra"/>
+</div><div class="form-group">
+    <label for="traduccion">traduccion</label>
+    <input readonly id="traduccion" type="text" class="form-control" name="traduccion" size="30" value="$cabeza.traduccion"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

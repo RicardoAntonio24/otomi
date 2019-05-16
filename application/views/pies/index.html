@@ -1,0 +1,21 @@
+$def with(pies)
+<h3>
+    <a href="/pies">pies</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>pies</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in pies:
+        <tr>
+            <td><a href='/pies/view/$item.id_palabra_pies'>$item.id_palabra_pies</a></td>
+            <td><a href='/pies/edit/$item.id_palabra_pies'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/pies/delete/$item.id_palabra_pies'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

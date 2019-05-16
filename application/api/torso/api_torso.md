@@ -1,0 +1,1 @@
+'/api_torso/?', 'application.api.torso.api_torso.Api_torso',

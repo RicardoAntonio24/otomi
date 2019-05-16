@@ -1,0 +1,21 @@
+$def with(manos)
+<h3>
+    <a href="/manos">manos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>manos</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in manos:
+        <tr>
+            <td><a href='/manos/view/$item.id_palabra_manos'>$item.id_palabra_manos</a></td>
+            <td><a href='/manos/edit/$item.id_palabra_manos'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/manos/delete/$item.id_palabra_manos'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

@@ -1,0 +1,21 @@
+$def with(partes_de_cuerpo)
+<h3>
+    <a href="/partes_de_cuerpo">partes_de_cuerpo</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>partes_de_cuerpo</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in partes_de_cuerpo:
+        <tr>
+            <td><a href='/partes_de_cuerpo/view/$item.id_palabra'>$item.id_palabra</a></td>
+            <td><a href='/partes_de_cuerpo/edit/$item.id_palabra'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/partes_de_cuerpo/delete/$item.id_palabra'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

@@ -1,0 +1,21 @@
+$def with(torso)
+<h3>
+    <a href="/torso">torso</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>torso</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in torso:
+        <tr>
+            <td><a href='/torso/view/$item.id_palabra_torso'>$item.id_palabra_torso</a></td>
+            <td><a href='/torso/edit/$item.id_palabra_torso'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/torso/delete/$item.id_palabra_torso'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

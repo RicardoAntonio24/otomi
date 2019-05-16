@@ -1,0 +1,5 @@
+'/cabeza', 'application.controllers.cabeza.index.Index',
+'/cabeza/view/(.+)', 'application.controllers.cabeza.view.View',
+'/cabeza/edit/(.+)', 'application.controllers.cabeza.edit.Edit',
+'/cabeza/delete/(.+)', 'application.controllers.cabeza.delete.Delete',
+'/cabeza/insert', 'application.controllers.cabeza.insert.Insert',

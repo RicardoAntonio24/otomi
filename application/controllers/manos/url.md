@@ -1,0 +1,5 @@
+'/manos', 'application.controllers.manos.index.Index',
+'/manos/view/(.+)', 'application.controllers.manos.view.View',
+'/manos/edit/(.+)', 'application.controllers.manos.edit.Edit',
+'/manos/delete/(.+)', 'application.controllers.manos.delete.Delete',
+'/manos/insert', 'application.controllers.manos.insert.Insert',

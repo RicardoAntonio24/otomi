@@ -1,0 +1,5 @@
+'/torso', 'application.controllers.torso.index.Index',
+'/torso/view/(.+)', 'application.controllers.torso.view.View',
+'/torso/edit/(.+)', 'application.controllers.torso.edit.Edit',
+'/torso/delete/(.+)', 'application.controllers.torso.delete.Delete',
+'/torso/insert', 'application.controllers.torso.insert.Insert',
